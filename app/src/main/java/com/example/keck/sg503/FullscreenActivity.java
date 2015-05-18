@@ -1,20 +1,13 @@
 package com.example.keck.sg503;
 
-import com.example.keck.sg503.util.SystemUiHider;
-
-import android.annotation.TargetApi;
 import android.app.Activity;
-import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.SystemClock;
-import android.view.MotionEvent;
 import android.view.View;
-import android.view.MotionEvent;
-import android.view.View;
-import android.view.animation.TranslateAnimation;
-import android.view.animation.Transformation;
 import android.widget.ImageButton;
+
+import com.example.keck.sg503.util.SystemUiHider;
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
@@ -62,6 +55,7 @@ public class FullscreenActivity extends Activity {
     long timeSwapBuff = 0L;
     boolean start=false;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -71,20 +65,32 @@ public class FullscreenActivity extends Activity {
         imgBtnLogo = (ImageButton) findViewById(R.id.btnLogo);
 
 
+        startTime = SystemClock.uptimeMillis();
+        customHandler.postDelayed(updateTimerThread2, 0);
+
+
         imgBtnLogo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (!start) {
-                    startTime = SystemClock.uptimeMillis();
-                    customHandler.removeCallbacks(updateTimerThread2);
-                    customHandler.postDelayed(updateTimerThread, 0);
-                    start = true;
-                } else {
-                    customHandler.removeCallbacks(updateTimerThread);
-                    startTime = SystemClock.uptimeMillis();
-                    customHandler.postDelayed(updateTimerThread2, 0);
-                    start = false;
-                }
+                customHandler.removeCallbacks(updateTimerThread2);
+
+                blinkcount = 0;
+
+                startTime = SystemClock.uptimeMillis();
+
+                customHandler.postDelayed(updateTimerThread, 0);
+
+//                if (!start) {
+//                    startTime = SystemClock.uptimeMillis();
+//                    customHandler.removeCallbacks(updateTimerThread2);
+//                    customHandler.postDelayed(updateTimerThread, 0);
+//                    start = true;
+//                } else {
+//                    customHandler.removeCallbacks(updateTimerThread);
+//                    startTime = SystemClock.uptimeMillis();
+//                    customHandler.postDelayed(updateTimerThread2, 0);
+//                    start = false;
+//                }
             }
         });
 
@@ -94,6 +100,7 @@ public class FullscreenActivity extends Activity {
 
     }
 
+    int blinkcount = 0;
     private Runnable updateTimerThread = new Runnable() {
         public void run() {
             timeInMilliseconds = SystemClock.uptimeMillis() - startTime;
@@ -110,16 +117,26 @@ public class FullscreenActivity extends Activity {
 
                 switch (count) {
                     case 0:
-                        imgBtnLogo.setBackgroundResource(R.drawable.eyeb1);
+                        //imgBtnLogo.setBackgroundResource(R.drawable.eyeb2);
+                        imgBtnLogo.setImageDrawable(getResources().getDrawable(R.drawable.eyeb2));
                         break;
                     case 10:
                     case 11:
-                    case 12:
-                        imgBtnLogo.setBackgroundResource(R.drawable.eyeb2);
+                    case 2:
+                        //imgBtnLogo.setBackgroundResource(R.drawable.eyeb1);
+                        imgBtnLogo.setImageDrawable(getResources().getDrawable(R.drawable.eyeb1));
                         break;
                 }
                 count++;
-                if (count > 12) count = 0;
+                if (count > 4) {
+                    count = 0;
+                    blinkcount++;
+                }
+            }
+            if (blinkcount>2) {
+                customHandler.removeCallbacks(updateTimerThread);
+                startTime = SystemClock.uptimeMillis();
+                customHandler.postDelayed(updateTimerThread2, 0);
             }
         }
     };
@@ -139,22 +156,40 @@ public class FullscreenActivity extends Activity {
                 startTime = SystemClock.uptimeMillis();
 
                 switch (count) {
-                    case 0:imgBtnLogo.setBackgroundResource(R.drawable.eyem1);break;
-                    case 1:imgBtnLogo.setBackgroundResource(R.drawable.eyem2);break;
+                    case 0://imgBtnLogo.setBackgroundResource(R.drawable.eyem1);
+                        imgBtnLogo.setImageDrawable(getResources().getDrawable(R.drawable.eyem1));
+                        break;
+                    case 1://imgBtnLogo.setBackgroundResource(R.drawable.eyem2);
+                        imgBtnLogo.setImageDrawable(getResources().getDrawable(R.drawable.eyem2));
+                        break;
                     case 2:case 3:case 4:case 5:
                     case 6:case 7:case 8:case 9:
-                        imgBtnLogo.setBackgroundResource(R.drawable.eyem3);break;
-                    case 10:imgBtnLogo.setBackgroundResource(R.drawable.eyem2);break;
-                    case 11:imgBtnLogo.setBackgroundResource(R.drawable.eyem9);break;
-                    case 12:imgBtnLogo.setBackgroundResource(R.drawable.eyem8);break;
+                        //imgBtnLogo.setBackgroundResource(R.drawable.eyem3);
+                        imgBtnLogo.setImageDrawable(getResources().getDrawable(R.drawable.eyem3));
+                        break;
+                    case 10://imgBtnLogo.setBackgroundResource(R.drawable.eyem2);
+                        imgBtnLogo.setImageDrawable(getResources().getDrawable(R.drawable.eyem2));
+                        break;
+                    case 11://imgBtnLogo.setBackgroundResource(R.drawable.eyem9);
+                        imgBtnLogo.setImageDrawable(getResources().getDrawable(R.drawable.eyem9));
+                        break;
+                    case 12://imgBtnLogo.setBackgroundResource(R.drawable.eyem8);
+                        imgBtnLogo.setImageDrawable(getResources().getDrawable(R.drawable.eyem8));
+                        break;
                     case 13:case 14:case 15:case 16:
                     case 17:case 18:case 19:case 20:
-                        imgBtnLogo.setBackgroundResource(R.drawable.eyem7);break;
-                    case 21:imgBtnLogo.setBackgroundResource(R.drawable.eyem8);break;
-                    case 22:imgBtnLogo.setBackgroundResource(R.drawable.eyem9);break;
-                    case 23:case 24:case 25:case 26:
-                    case 27:case 28:case 29:case 30:
-                        imgBtnLogo.setBackgroundResource(R.drawable.eyeb2);break;
+                        //imgBtnLogo.setBackgroundResource(R.drawable.eyem7);
+                        imgBtnLogo.setImageDrawable(getResources().getDrawable(R.drawable.eyem7));
+                        break;
+                    case 21://imgBtnLogo.setBackgroundResource(R.drawable.eyem8);
+                        imgBtnLogo.setImageDrawable(getResources().getDrawable(R.drawable.eyem8));
+                        break;
+                    case 22://imgBtnLogo.setBackgroundResource(R.drawable.eyem9);
+                        imgBtnLogo.setImageDrawable(getResources().getDrawable(R.drawable.eyem9));
+                        break;
+//                    case 23:case 24:case 25:case 26:
+//                    case 27:case 28:case 29:case 30:
+//                        imgBtnLogo.setBackgroundResource(R.drawable.eyeb2);break;
                 }
                 count++;
                 if (count > 30) count = 0;

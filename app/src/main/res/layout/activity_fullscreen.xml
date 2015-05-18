@@ -11,11 +11,12 @@
          TextureView, etc. -->
     <ImageButton
         android:id="@+id/btnLogo"
-        android:layout_width="450dp"
-        android:layout_height="450dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:background="@drawable/eyeb2"
-        android:layout_centerInParent="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/eyeb2"
+        android:background="#ff000000"
         />
 
 </FrameLayout>
