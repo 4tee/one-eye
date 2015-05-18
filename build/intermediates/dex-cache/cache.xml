@@ -2,32 +2,32 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\Keck\AndroidStudioProjects\SG503\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\libs\internal_impl-22.0.0.jar"
+        jar="/Users/rhymes_mcpro/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.1.1/support-annotations-22.1.1.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
-        <dex dex="C:\Users\Keck\AndroidStudioProjects\SG503\app\build\intermediates\pre-dexed\debug\internal_impl-22.0.0-42db596a913c51f45cb8f5973ce76815ab78f176.jar" />
+        sha1="01d051a6bfb1218b1db2d3a5af0480ac2c25c42a">
+        <dex dex="/Users/rhymes_mcpro/Documents/Bitbucket/OneEye/app/build/intermediates/pre-dexed/debug/support-annotations-22.1.1-d5713b0d620710e5eecd48d675917d6193d270b6.jar" />
     </item>
     <item
-        jar="C:\Users\Keck\AndroidStudioProjects\SG503\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\classes.jar"
+        jar="/Users/rhymes_mcpro/Documents/Bitbucket/OneEye/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/libs/internal_impl-22.1.1.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
-        <dex dex="C:\Users\Keck\AndroidStudioProjects\SG503\app\build\intermediates\pre-dexed\debug\classes-4123483f28b38792a32d3e09b16abd995fb9a3f2.jar" />
+        sha1="9e070ad32b2700b0343e8e0cccc437733d91ba3a">
+        <dex dex="/Users/rhymes_mcpro/Documents/Bitbucket/OneEye/app/build/intermediates/pre-dexed/debug/internal_impl-22.1.1-5748eeaae1788bde70a74c92be0a426c48cd038a.jar" />
     </item>
     <item
-        jar="C:\Users\Keck\AndroidStudioProjects\SG503\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.0.0\classes.jar"
+        jar="/Users/rhymes_mcpro/Documents/Bitbucket/OneEye/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/classes.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
-        <dex dex="C:\Users\Keck\AndroidStudioProjects\SG503\app\build\intermediates\pre-dexed\debug\classes-f631ba61f8d91cee2c8eddc46355d1ff43ffd1d9.jar" />
+        sha1="a3ff3c506644c820eb2bdf06e8339f72be578551">
+        <dex dex="/Users/rhymes_mcpro/Documents/Bitbucket/OneEye/app/build/intermediates/pre-dexed/debug/classes-5a6ac02134d674ebe8868ec8eeee3bda5be52cb5.jar" />
     </item>
     <item
-        jar="C:\Users\Keck\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.0.0\support-annotations-22.0.0.jar"
+        jar="/Users/rhymes_mcpro/Documents/Bitbucket/OneEye/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/classes.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
-        <dex dex="C:\Users\Keck\AndroidStudioProjects\SG503\app\build\intermediates\pre-dexed\debug\support-annotations-22.0.0-9df29a5d5800d426639cfe6e4c01393bd4197acd.jar" />
+        sha1="c95ba8152923e4872e86a82cfcba9a51c0214328">
+        <dex dex="/Users/rhymes_mcpro/Documents/Bitbucket/OneEye/app/build/intermediates/pre-dexed/debug/classes-5a4673ba0cbe284c92286a78eb0d35eef983b502.jar" />
     </item>
 
 </items>
