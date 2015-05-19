@@ -5,7 +5,7 @@ android {
     buildToolsVersion "21.1.2"
 
     defaultConfig {
-        applicationId "com.example.keck.sg503"
+        applicationId "com.keck.sg503"
         minSdkVersion 19
         targetSdkVersion 21
         versionCode 1

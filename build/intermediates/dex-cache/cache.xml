@@ -6,28 +6,28 @@
         jumboMode="false"
         revision="21.1.2"
         sha1="01d051a6bfb1218b1db2d3a5af0480ac2c25c42a">
-        <dex dex="/Users/rhymes_mcpro/Documents/Bitbucket/OneEye/app/build/intermediates/pre-dexed/debug/support-annotations-22.1.1-d5713b0d620710e5eecd48d675917d6193d270b6.jar" />
+        <dex dex="/Users/rhymes_mcpro/Documents/Bitbucket/OneEye/app/build/intermediates/pre-dexed/release/support-annotations-22.1.1-d5713b0d620710e5eecd48d675917d6193d270b6.jar" />
     </item>
     <item
         jar="/Users/rhymes_mcpro/Documents/Bitbucket/OneEye/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/libs/internal_impl-22.1.1.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="9e070ad32b2700b0343e8e0cccc437733d91ba3a">
-        <dex dex="/Users/rhymes_mcpro/Documents/Bitbucket/OneEye/app/build/intermediates/pre-dexed/debug/internal_impl-22.1.1-5748eeaae1788bde70a74c92be0a426c48cd038a.jar" />
+        <dex dex="/Users/rhymes_mcpro/Documents/Bitbucket/OneEye/app/build/intermediates/pre-dexed/release/internal_impl-22.1.1-5748eeaae1788bde70a74c92be0a426c48cd038a.jar" />
     </item>
     <item
         jar="/Users/rhymes_mcpro/Documents/Bitbucket/OneEye/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/classes.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="a3ff3c506644c820eb2bdf06e8339f72be578551">
-        <dex dex="/Users/rhymes_mcpro/Documents/Bitbucket/OneEye/app/build/intermediates/pre-dexed/debug/classes-5a6ac02134d674ebe8868ec8eeee3bda5be52cb5.jar" />
+        <dex dex="/Users/rhymes_mcpro/Documents/Bitbucket/OneEye/app/build/intermediates/pre-dexed/release/classes-5a6ac02134d674ebe8868ec8eeee3bda5be52cb5.jar" />
     </item>
     <item
         jar="/Users/rhymes_mcpro/Documents/Bitbucket/OneEye/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/classes.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="c95ba8152923e4872e86a82cfcba9a51c0214328">
-        <dex dex="/Users/rhymes_mcpro/Documents/Bitbucket/OneEye/app/build/intermediates/pre-dexed/debug/classes-5a4673ba0cbe284c92286a78eb0d35eef983b502.jar" />
+        <dex dex="/Users/rhymes_mcpro/Documents/Bitbucket/OneEye/app/build/intermediates/pre-dexed/release/classes-5a4673ba0cbe284c92286a78eb0d35eef983b502.jar" />
     </item>
 
 </items>
